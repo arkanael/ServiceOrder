@@ -9,7 +9,6 @@ namespace Projeto.Entities
         public Guid IdOrdemServico { get; set; }
         public DateTime DataAtendimento { get; set; }
         public DateTime DataAgendamento { get; set; }
-
         public Boolean Status { get; set; }
     }
 }

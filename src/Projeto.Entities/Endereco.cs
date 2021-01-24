@@ -6,6 +6,9 @@ namespace Projeto.Entities
 {
     public class Endereco
     {
-        public int MyProperty { get; set; }
+        public Guid IdEndereco { get; set; }
+        public string Logradouro { get; set; }
+        public string Complemento { get; set; }
+        public string Numero { get; set; }
     }
 }
