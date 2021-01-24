@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projeto.Entities
 {
-    class Cliente
+    public class Cliente
     {
     }
 }
