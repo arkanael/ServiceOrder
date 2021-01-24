@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Projeto.Entities
 {
-    public class Cliente
+    public class Endereco
     {
-        public Guid IdCliente { get; set; }
-        public string Nome { get; set; }
+        public int MyProperty { get; set; }
     }
 }
