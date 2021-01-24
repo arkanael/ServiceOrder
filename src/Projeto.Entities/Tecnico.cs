@@ -13,5 +13,9 @@ namespace Projeto.Entities
         public string Email { get; set; }
 
         public string Telefone { get; set; }
+
+        #region Relacionamento
+        public List<OrdemServico> OrdemServicos { get; set; }
+        #endregion
     }
 }

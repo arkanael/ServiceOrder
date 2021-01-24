@@ -14,5 +14,11 @@ namespace Projeto.Entities
         public string Estado { get; set; }
         public string Complemento { get; set; }
         public string CEP { get; set; }
+
+        #region Relacionamento
+        public Cliente Cliente { get; set; }
+        public Guid IdCliente { get; set; }
+        public List<OrdemServico> OrdemServicos { get; set; }
+        #endregion
     }
 }
