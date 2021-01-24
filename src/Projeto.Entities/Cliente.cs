@@ -10,6 +10,6 @@ namespace Projeto.Entities
         public string RazaoSocial { get; set; }
         public string NomeFantasia { get; set; }
         public string CNPJ { get; set; }
-
+        public List<Endereco> Enderecos { get; set; }
     }
 }
