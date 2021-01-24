@@ -10,6 +10,6 @@ namespace Projeto.Entities
         public DateTime DataAtendimento { get; set; }
         public DateTime DataAgendamento { get; set; }
 
-        public Boolean resolvido { get; set; }
+        public Boolean Status { get; set; }
     }
 }
