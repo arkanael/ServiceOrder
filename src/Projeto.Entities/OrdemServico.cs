@@ -7,8 +7,9 @@ namespace Projeto.Entities
     public class OrdemServico
     {
         public Guid IdOrdemServico { get; set; }
-        public DateTime DataAtendimento { get; set; }
+        public DateTime DataCadastro { get; set; }
         public DateTime DataAgendamento { get; set; }
+        public DateTime DataFechamento { get; set; }
         public Boolean Status { get; set; }
 
         #region Relacionamento
