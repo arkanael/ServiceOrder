@@ -22,12 +22,12 @@ namespace Projeto.Infraestructure.Data.Mappings
 
             builder.Property(x => x.Numero)
                 .HasColumnType("varchar")
-                .HasMaxLength(10000)
+                .HasMaxLength(10)
                 .IsRequired();
 
             builder.Property(x => x.Bairro)
                 .HasColumnType("varchar")
-                .HasMaxLength(100)
+                .HasMaxLength(50)
                 .IsRequired();
 
             builder.Property(x => x.Estado)
