@@ -18,7 +18,7 @@ namespace Projeto.Infraestructure.Data.Mappings
             builder.Property(x => x.IdCliente)
                 .IsRequired();
 
-            builder.Property(x => x.DataAbertatura)
+            builder.Property(x => x.DataAbertura)
                 .HasColumnType("date")
                 .IsRequired(false);
 
