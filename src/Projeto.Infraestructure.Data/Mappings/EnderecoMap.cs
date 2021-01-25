@@ -15,6 +15,9 @@ namespace Projeto.Infraestructure.Data.Mappings
 
             builder.HasKey(x => x.IdEndereco);
 
+            builder.Property(x => x.IdEndereco)
+                .IsRequired();
+
             builder.Property(x => x.Logradouro)
                 .HasColumnType("varchar")
                 .HasMaxLength(250)
