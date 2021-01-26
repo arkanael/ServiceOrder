@@ -1,7 +1,9 @@
-﻿using Projeto.Infraestructure.Data.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto.Infraestructure.Data.Context;
 using Projeto.Infraestructure.Data.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
@@ -18,42 +20,42 @@ namespace Projeto.Infraestructure.Data.Repositories
 
         public void Insert(TEntity entity)
         {
-            throw new NotImplementedException();
+            context.Entry(entity).State = EntityState.Added;
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            context.Entry(entity).State = EntityState.Modified;
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            context.Entry(entity).State = EntityState.Deleted;
         }
 
         public List<TEntity> FindAll()
         {
-            throw new NotImplementedException();
+            return context.Set<TEntity>().ToList();
         }
 
         public List<TEntity> Find(Expression<Func<TEntity, bool>> expression)
         {
-            throw new NotImplementedException();
+            return context.Set<TEntity>().Where(expression).ToList();
         }
 
         public TEntity FindById(Guid id)
         {
-            throw new NotImplementedException();
+            return context.Set<TEntity>().Find(id);
         }
 
         public int Count()
         {
-            throw new NotImplementedException();
+            return context.Set<TEntity>().Count();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            context.Dispose();
         }
     }
 }
