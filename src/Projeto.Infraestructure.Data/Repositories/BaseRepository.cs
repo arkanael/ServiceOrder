@@ -1,4 +1,5 @@
-﻿using Projeto.Infraestructure.Data.Contracts;
+﻿using Projeto.Infraestructure.Data.Context;
+using Projeto.Infraestructure.Data.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -8,6 +9,13 @@ namespace Projeto.Infraestructure.Data.Repositories
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
+        private readonly DataContext context;
+
+        public BaseRepository(DataContext context)
+        {
+            this.context = context;
+        }
+
         public void Insert(TEntity entity)
         {
             throw new NotImplementedException();
