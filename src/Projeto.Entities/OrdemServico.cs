@@ -7,18 +7,20 @@ namespace Projeto.Entities
     public class OrdemServico
     {
         public Guid IdOrdemServico { get; set; }
-        public DateTime DataAbertatura { get; set; }
+        public DateTime DataAbertura { get; set; }
         public DateTime DataAgendamento { get; set; }
         public DateTime DataFechamento { get; set; }
         public Boolean Status { get; set; }
-        public Guid IdEndereco { get; set; }
-        public Guid IdTecnico { get; set; }
-        public Guid IdCliente { get; set; }
 
         #region Relacionamento
         public Endereco Endereco { get; set; }
+        public Guid IdEndereco { get; set; }
         public Cliente Cliente { get; set; }
+        public Guid IdCliente { get; set; }
         public Tecnico Tecnico { get; set; }
+        public Guid IdTecnico { get; set; }
+        public Servico Servico { get; set; }
+        public Guid IdServico { get; set; }
         #endregion
 
     }

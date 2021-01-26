@@ -18,30 +18,17 @@ namespace Projeto.Infraestructure.Data.Mappings
             builder.Property(x => x.IdCliente)
                 .IsRequired();
 
-            builder.Property(x => x.DataAbertatura)
+            builder.Property(x => x.DataAbertura)
                 .HasColumnType("date")
-                .IsRequired();
+                .IsRequired(false);
 
             builder.Property(x => x.DataAgendamento)
                 .HasColumnType("date")
                 .IsRequired();
 
             builder.Property(x => x.DataFechamento)
-               .HasColumnType("date")
-               .IsRequired(false);
-
-            builder.Property(x => x.Status)
+                .HasColumnType("date")
                 .IsRequired();
-
-
-            builder.HasOne(x => x.Tecnico);
-
-            builder.HasOne(x => x.Cliente);
-
-            builder.HasOne(x => x.Endereco)
-                .WithMany(x => x.OrdemServicos)
-                .HasForeignKey(x => x.IdEndereco);
-
         }
     }
 }
