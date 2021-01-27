@@ -30,7 +30,7 @@ namespace Projeto.Infraestructure.Data.Mappings
 
             builder.Property(x => x.Preco)
                 .HasColumnType("decimal")
-                .HasMaxLength(10)
+                .has
                 .IsRequired();
         }
     }
