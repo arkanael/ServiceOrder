@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Entities", "src\Projeto.Entities\Projeto.Entities.csproj", "{99B03734-8CF9-4B48-9FE9-8DB1F412A624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Entities", "src\Projeto.Entities\Projeto.Entities.csproj", "{99B03734-8CF9-4B48-9FE9-8DB1F412A624}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Camada de Apresentação", "1 - Camada de Apresentação", "{F9DDBCB9-DAC4-4E0C-9795-23DB8B34F517}"
 EndProject
@@ -11,12 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Camada de Entidades", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Camada de Infraestrutura", "3 - Camada de Infraestrutura", "{4929C317-F8B5-4A7B-A7B8-AFADCA1E1FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Presentation", "src\Projeto.Presentation\Projeto.Presentation.csproj", "{948F199C-00FB-4A70-A34C-D649D7AD6E4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Presentation", "src\Projeto.Presentation\Projeto.Presentation.csproj", "{948F199C-00FB-4A70-A34C-D649D7AD6E4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Infraestructure.Data", "src\Projeto.Infraestructure.Data\Projeto.Infraestructure.Data.csproj", "{9DEAB993-2864-4FEE-A027-DB524E7CDB0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Infraestructure.Data", "src\Projeto.Infraestructure.Data\Projeto.Infraestructure.Data.csproj", "{9DEAB993-2864-4FEE-A027-DB524E7CDB0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81D1909B-D244-4269-9F4E-C01E0D713971}"
 	ProjectSection(SolutionItems) = preProject
+		documentação\modelagem\Diagram Estudo c#.asta = documentação\modelagem\Diagram Estudo c#.asta
 		README.md = README.md
 	EndProjectSection
 EndProject
