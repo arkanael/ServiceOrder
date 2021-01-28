@@ -10,6 +10,7 @@ namespace Projeto.Infraestructure.Data.Contracts
         void Insert(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);
+        void SaveChanges();
         List<TEntity> FindAll();
         List<TEntity> Find(Expression<Func<TEntity, bool>> expression);
         TEntity FindById(Guid id);

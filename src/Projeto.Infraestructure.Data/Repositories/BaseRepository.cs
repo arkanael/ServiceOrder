@@ -11,7 +11,7 @@ namespace Projeto.Infraestructure.Data.Repositories
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-        private readonly DataContext context;
+        protected readonly DataContext context;
 
         public BaseRepository(DataContext context)
         {
@@ -21,6 +21,7 @@ namespace Projeto.Infraestructure.Data.Repositories
         public void Insert(TEntity entity)
         {
             context.Entry(entity).State = EntityState.Added;
+            
         }
 
         public void Update(TEntity entity)
@@ -33,7 +34,7 @@ namespace Projeto.Infraestructure.Data.Repositories
             context.Entry(entity).State = EntityState.Deleted;
         }
 
-        public List<TEntity> FindAll()
+        public virtual List<TEntity> FindAll()
         {
             return context.Set<TEntity>().ToList();
         }
@@ -43,7 +44,7 @@ namespace Projeto.Infraestructure.Data.Repositories
             return context.Set<TEntity>().Where(expression).ToList();
         }
 
-        public TEntity FindById(Guid id)
+        public virtual TEntity FindById(Guid id)
         {
             return context.Set<TEntity>().Find(id);
         }
@@ -56,6 +57,11 @@ namespace Projeto.Infraestructure.Data.Repositories
         public void Dispose()
         {
             context.Dispose();
+        }
+
+        public void SaveChanges()
+        {
+            context.SaveChanges(); 
         }
     }
 }
