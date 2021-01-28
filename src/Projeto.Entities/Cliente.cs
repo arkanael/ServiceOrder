@@ -13,6 +13,7 @@ namespace Projeto.Entities
 
         #region Relacionamento
         public List<Endereco> Enderecos { get; set; }
+        public List<OrdemServico> OrdemServicos { get; set; }
         #endregion
     }
 }

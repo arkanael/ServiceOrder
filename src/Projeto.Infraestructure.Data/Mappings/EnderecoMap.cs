@@ -52,6 +52,13 @@ namespace Projeto.Infraestructure.Data.Mappings
                 .HasColumnType("varchar")
                 .HasMaxLength(8)
                 .IsRequired();
+
+            builder.Property(x => x.IdCliente)
+                .IsRequired();
+
+            builder.HasOne(x => x.Cliente)          //Endereço tem 1 cliente
+                .WithMany(x => x.Enderecos)         // onde cliente tem muitos endereços
+                .HasForeignKey(x => x.IdCliente);   // e a chave estrangeira é a IdCliente 
         }  
     }
 }

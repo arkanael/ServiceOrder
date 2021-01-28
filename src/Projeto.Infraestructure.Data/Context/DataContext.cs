@@ -8,8 +8,7 @@ namespace Projeto.Infraestructure.Data.Context
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> builder)
-           : base(builder)
+        public DataContext(DbContextOptions<DataContext> builder): base(builder)
         {
 
         }

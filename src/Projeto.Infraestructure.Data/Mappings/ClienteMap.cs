@@ -30,7 +30,7 @@ namespace Projeto.Infraestructure.Data.Mappings
 
             builder.Property(x => x.CNPJ)
                .HasColumnType("char")
-               .HasMaxLength(14)
+               .HasMaxLength(14)  
                .IsRequired();
 
         }
