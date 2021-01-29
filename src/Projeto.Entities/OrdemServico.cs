@@ -19,8 +19,6 @@ namespace Projeto.Entities
         public Guid IdCliente { get; set; }
         public Tecnico Tecnico { get; set; }
         public Guid IdTecnico { get; set; }
-        public Servico Servico { get; set; }
-        public Guid IdServico { get; set; }
         #endregion
 
     }
