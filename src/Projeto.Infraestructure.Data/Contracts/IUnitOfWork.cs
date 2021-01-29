@@ -14,7 +14,6 @@ namespace Projeto.Infraestructure.Data.Contracts
         IClienteRepository ClienteRepository { get; }
         IEnderecoRepository EnderecoRepository { get; }
         IOrdemServicoRepository OrdemServicoRepository { get; }
-        IServicoRepository ServicoRepository { get; }
         ITecnicoRepository TecnicoRepository { get; }
     }
 }
