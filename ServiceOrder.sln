@@ -18,7 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81D1909B-D244-4269-9F4E-C01E0D713971}"
 	ProjectSection(SolutionItems) = preProject
 		documentação\modelagem\Diagram Estudo c#.asta = documentação\modelagem\Diagram Estudo c#.asta
-		..\Users\luiz.guilherme\Desktop\diagrama de classe.png = ..\Users\luiz.guilherme\Desktop\diagrama de classe.png
+		documentação\modelagem\diagrama de classe.png = documentação\modelagem\diagrama de classe.png
 		README.md = README.md
 	EndProjectSection
 EndProject
