@@ -6,9 +6,10 @@ namespace Projeto.Infraestructure.Data.Contracts
 {
     public interface IUnitOfWork : IDisposable
     {
-        void BeginTrasaction();
+        void BeginTransaction();
         void Commit();
         void Rollback();
+        void SaveChanges();
 
         IClienteRepository ClienteRepository { get; }
         IEnderecoRepository EnderecoRepository { get; }
