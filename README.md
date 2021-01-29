@@ -21,4 +21,4 @@
 
 <h3><g-emoji class="g-emoji" alias="memo" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png">📝</g-emoji> Licença</h2>
 <p>Este projeto esta sobe a licença MIT.</p>
-<p>Projeto desenvolvido por Fábio Cavadas, Luiz Guilherme Bandeira, Raphael Duarte e Renata Teixeira. <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji></p>
+<p>Projeto desenvolvido por Manager Fábio Cavadas, Developer Luiz Guilherme Bandeira, Suportter Raphael Duarte e Renata Teixeira. <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji></p>
