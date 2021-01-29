@@ -54,8 +54,6 @@ namespace Projeto.Infraestructure.Data.Mappings
 
         public IOrdemServicoRepository OrdemServicoRepository => new OrdemServicoRepository(context);
 
-        public IServicoRepository ServicoRepository => new ServicoRepository(context);
-
         public ITecnicoRepository TecnicoRepository =>  new TecnicoRepository(context);
     }
 }
